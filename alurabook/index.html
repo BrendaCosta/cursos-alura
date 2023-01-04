@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Alurabooks </title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <div class="icon-menu" onclick="abrirMenu()">
+                <ion-icon name="menu-outline" class="menu-hamburguer" ></ion-icon>
+            </div>
+            <img src="./img/Logo.svg" alt="logo-alurabooks">
+        </div>
+        <div class="titulo-logo">
+            <img src="./img/Logo.svg" alt="logo-alurabooks">
+            <p><strong>Alura</strong>Books</p>
+        </div>
+        <div class="menu-principal">
+            <ul>
+                <li class="categoria" onclick="abrirCategoria()">CATEGORIAS</li>
+                <li>FAVORITOS</li>
+                <li>MINHA ESTANTE</li>
+            </ul>
+        </div>
+        
+        <div class="nav-acoes">
+          
+            <ion-icon class="coracao" name="heart-outline"></ion-icon>
+            <a href="#"> <ion-icon name="bag-outline"> </ion-icon> <p  class="titulo__icone">Minha Sacola</p></a>
+            <a href="#"><ion-icon name="person-outline"></ion-icon><p class="titulo__icone">Meu perfil</p></a>
+        </div>
+
+    </nav>
+
+    <div class="menu-mobile">
+        <li>Categoria</li>
+        <li>PROGRAMAÇÃO</li>
+        <li>FRONT-END</li>
+        <li>INFRAESTRUTURA</li>
+        <li>BUSINESS</li>
+        <li>DESIGN & UX</li>
+    </div>
+    <main>
+        <h1>Já sabe por onde começar?</h1>
+        <h3>Encontre em nossa estante o que precisa para seu desenvolvimento!</h3>
+        <div class="buscar">
+            <ion-icon name="search-outline"></ion-icon>
+            <p>Qual será sua próxima leitura?</p>
+        </div>
+    </main>
+    <section class="vitrine">
+        <h1>ÚLTIMOS LANÇAMENTOS</h1>
+        <div class="vitrine_livros">
+            <div class="livro">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="./img/ApacheKafka.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Javascript.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Gestão.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Portugol.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Tuning.svg" alt=""></div>
+                   
+                    </div>
+                
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-texto">
+                    <h3>Talvez você também se interesse por...</h3>
+                    <h1>Angular 11 e Firebase</h1>
+                    <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="bag-outline"></ion-icon>
+                </div>
+    
+                <div class="card-imagem">
+                    <img src="./img/Angular.png" alt="" srcset="">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vitrine">
+        <h1>MAIS VENDIDOS</h1>
+        <div class="vitrine_livros">
+            <div class="livro">
+                <div class="swiper">
+                     <!-- If we need pagination -->
+                     <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="./img/ApacheKafka.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Javascript.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Gestão.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Portugol.svg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/Tuning.svg" alt=""></div>
+                   
+                    </div>
+                   
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-texto">
+                    <div class="card-texto-estrelas">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                    <h3>Autora do Mês</h3>
+                    <h1>Juliana Agarikov</h1>
+                    <p>Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="bag-outline"></ion-icon>
+                </div>
+    
+                <div class="card-imagem">
+                    <img src="./img/Perfil-escritora.png" alt="" srcset="">
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="topicos">
+        <h3>TÓPICOS VISITADOS RECENTEMENTE</h3>
+        <div class="links">
+            <a href="#">Android</a>
+            <a href="#">Marketing Digital</a>
+            <a href="#">Agile</a>
+            <a href="#">Startups</a>
+            <a href="#">HTML & CSS</a>
+            <a href="#">Python</a>
+            <a href="#">Javascript</a>
+            <a href="#">Java</a>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-texto">
+            <h1>Fique por dentro das novidades!</h1>
+        <h3>Atualizações de e-books, novos livros, promoções e outros.</h3>
+        </div>
+        <div class="newsletter-cadastro">
+            <ion-icon name="mail-outline"></ion-icon>
+            <p>Cadastre seu e-mail</p>
+        </div>
+    </section>
+    <footer>
+        <h3>Grupo Alura</h3>
+        <div class="grupo-alura">
+                <div>
+                    <p class="titulo-grupo-alura">Grupo Alura</p>
+                </div>
+             <div class="grupos-alura">
+                <p>EDUCAÇÃO </p>
+                <ul>
+                    <li><img src="./img/Caelum.png" alt=""><p>Caelum</p></li>
+                    <li><img src="./img/CasaDoCodigo.png" alt=""><p>Casa do Código</p></li>
+                </ul>
+             </div>
+             <div class="grupos-alura">
+                <p>EDUCAÇÃO ONLINE </p>
+                <ul>
+                    <li><img src="./img/Alura.png" alt=""><p>Alura</p></li>
+                    <li><img src="./img/AluraEmpresas.png" alt=""><p>Alura Empresas</p></li>
+                    <li><img src="./img/AluraLatam.png" alt=""><p>Alura Latam</p></li>
+                    <li><img src="./img/AluraStart.png" alt=""><p>Alura Start</p></li>
+                    <li><img src="./img/MusicDot.png" alt=""><p>MusicDot</p></li>
+                    <li><img src="./img/AluraLingua.png" alt=""><p>Alura Lingua</p></li>
+                    <li><img src="./img/PM3.png" alt=""><p>PM3</p></li>
+                </ul>
+             </div>
+             <div class="grupos-alura">
+                <p>COMUNIDADE </p>
+                <ul>
+                    <li><img src="./img/HipstersTech.png" alt=""><p>Hipsters ponto Tech</p></li>
+                    <li><img src="./img/Scuba.png" alt=""><p>Scuba Dev</p></li>
+                    <li><img src="./img/Layers.png" alt=""><p>Layers ponto Tech</p></li>
+                    <li><img src="./img/LikeABoss.png" alt=""><p>Like a Boss</p></li>
+                    <li><img src="./img/CarreiraSemFronteira.png" alt=""><p>Carreira sem Fronteira</p></li>
+                    <li><img src="./img/HipstersJobs.png" alt=""><p>Hipsters ponto Jobs</p></li>
+                    <li><img src="./img/GUJ.png" alt=""><p>GUJ</p></li>
+                </ul>
+             </div>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./main.js"></script>
+</body>
+</html>
